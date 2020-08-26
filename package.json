@@ -1,0 +1,19 @@
+{
+  "name": "covid19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "ejs": "3.1.5",
+    "express": "*",
+    "morgan": "*",
+    "neo4j-driver": "^4.1.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

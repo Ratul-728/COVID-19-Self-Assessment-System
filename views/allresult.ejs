@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>COVID-19 Self-Assessment System</title>
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body class="text-center" style="background-color: lightgrey;">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Covid-19 Self-Assessment</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="/allresult">All Result</a>
+          </nav>
+        </div>
+      </header>
+
+
+
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>Temperature</th>
+        <th>Assessment Score</th>
+        <th>COVID-19 Result</th>
+      </tr>
+      <tr>
+    <% persons.forEach(function(person){ %>
+        <td><%= person.id+1 %></td>
+        <td><%= person.pname %></td>
+        <td><%= person.page %></td>
+        <td><%= person.psex %></td>
+        <td><%= person.ptemp %></td>
+        <td><%= person.pscore %></td>
+        <td><%= person.presult %></td>
+        </tr>
+ <%   }) %> 
+        
+
+
+        
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+              
+            </div>
+          </footer>
+        </div>
+            <script
+                src="https://code.jquery.com/jquery-1.12.4.js"
+                integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+                crossorigin="anonymous">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+    </html>
+    

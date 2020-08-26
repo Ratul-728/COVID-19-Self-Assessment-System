@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>COVID-19 Self-Assessment System</title>
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body class="text-center" style="background-color: lightgrey;">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Covid-19 Self-Assessment</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="/allresult">All Result</a>
+          </nav>
+        </div>
+      </header>
+    
+      <h3>Details</h3>
+      <form method="POST" action="/test/result">
+        <input type="text" name = name placeholder="Full Name">
+        <input type="text" name = age placeholder="Age">
+        <input type="text" name = sex placeholder="Sex">
+        <input type="number" name = bt placeholder="Body Temperature">
+
+        <br><h3>Symtoms</h3>
+        <input type="checkbox" name = bp value= 1>
+        <label for = "bp"> Breathing problem</label><br>
+        <input type="checkbox" name = dc value= 1>
+        <label for="dc">Dry cough</label><br>
+        <input type="checkbox" name = st value= 1>
+        <label for="st"> Sore throat</label><br>
+        <input type="checkbox" name = w value= 1>
+        <label for="w"> Weakness</label><br>
+        <input type="checkbox" name = rn value= 1>
+        <label for="rn"> Runny nose</label><br>
+
+        <br><h3>Additional Information</h3>
+        <input type="radio" name = ap value= 1>
+        <label for="ap"> Abnormal pain</label><br>
+        <input type="radio" name = v value= 1>
+        <label for="v"> Vomitting</label><br>
+        <input type="radio" name = d value= 1>
+        <label for="d"> Diarrhoea</label><br>
+        <input type="radio" name = cp value= 1>
+        <label for="cp"> Cheast pain</label><br>
+        <input type="radio" name = mp value= 1>
+        <label for="mp"> Muscle pain</label><br>
+        <input type="radio" name = lts value= 1>
+        <label for="lts"> Loss of teste or smell</label><br>
+        <input type="radio" name = rof value= 1>
+        <label for="rof">Rush on skin</label><br>
+        <input type="radio" name = lsm value= 1>
+        <label for="lsm"> Loss of speech or movement</label><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          
+        </div>
+      </footer>
+    </div>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
